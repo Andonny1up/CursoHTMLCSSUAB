@@ -1,0 +1,35 @@
+body{
+    background-image: url(https://images.pexels.com/photos/69932/tabby-cat-close-up-portrait-69932.jpeg?auto=compress&cs=tinysrgb&w=600);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+.contenedor{
+    background-color: slategray;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 500px;
+    opacity: 0.9;
+}
+h1,h2,p{
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    margin-top: 0;
+}
+hr{
+    height: 3px;
+    border-color: firebrick;
+    background-color: firebrick;
+}
+h2{
+    font-size: 30px;
+}
+h2 span{
+   color: firebrick; 
+}
+.cursiva{
+    font-style: italic;
+}

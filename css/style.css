@@ -14,10 +14,15 @@ h1{
 }
 ul li{
     display: inline-block;
+    margin: 20px;
 }
 ul li a{
     color: white;
 }
 a:hover{
    color: red; 
+}
+h1, nav{
+    display: inline-block;
+    width: 40%;
 }
