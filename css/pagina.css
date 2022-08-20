@@ -19,6 +19,10 @@ header{
     color: white;
     padding: 1rem 2rem;
 }
+.header-izquierda{
+    display: flex;
+    align-items: center;
+}
 .header-derecha{
     display: flex;
     justify-content: end;
@@ -43,17 +47,45 @@ section.uno {
     grid-template-columns: repeat(2, 1fr);
     background-color: white;
 }
+section.uno .izquierda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.uno .izquierda img{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
 section.uno .derecha{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 section.uno .derecha p{
     font-size: 1.5rem;
 }
 section.uno .derecha a{
     align-self: flex-start;
+}
+section.dos{
+    animation: cambiarColor 4s linear infinite;
+}
+@keyframes cambiarColor{
+    0%, 100%{
+        background-color: red;
+    }
+    25%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: greenyellow;
+    }
+    75%{
+        background-color: green;
+    }
 }
 .btn{
     background-color: blue;
@@ -66,4 +98,40 @@ section.uno .derecha a{
 }
 .btn:hover{
     background-color: lightblue;
+}
+
+@media (max-width: 796px ) {
+    html{
+       font-size: 80%; 
+    }
+}
+@media (max-width: 576px) {
+    header{
+       grid-template-columns: 1fr;
+       height: 100px;
+    }
+    h1{
+        text-align: center;
+    }
+    .header-izquierda, .header-derecha{
+        justify-content: center;
+        padding: 2rem auto;
+        margin: 0.2rem;
+    }
+    /* .header-izquierda, section.uno .izquierda{
+        grid-row: 2;
+    } */
+    section{
+        padding-top: 100px;
+        margin-bottom: 80px;
+    }
+    section.uno{
+        grid-template-columns: 1fr;
+    }
+    section.uno .derecha p{
+        text-align: center;
+    }
+    section.uno .derecha a{
+        align-self: center;
+    }
 }
