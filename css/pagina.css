@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*posicion*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    /*estilo*/
+    background-color: blue;
+    color: white;
+    padding: 1rem 2rem;
+}
+.header-derecha{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.header-derecha > a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 2rem ;
+}
+.header-derecha > a:hover{
+    color: gainsboro;
+}
+section{
+    height: 100vh;
+    background-color: black;
+    padding-top: 70px;
+}
+section.uno {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+}
+section.uno .derecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.uno .derecha p{
+    font-size: 1.5rem;
+}
+section.uno .derecha a{
+    align-self: flex-start;
+}
+.btn{
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    margin-top: 1rem;
+
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: lightblue;
+}
